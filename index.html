@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duckyworld</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="/script.js" defer></script>
+</head>
+
+<body>
+    <div class="modal-backdrop"></div>
+    <div class="back-1block">
+        <div class="container">
+            <header>
+                <nav>
+                    <div class="nav-wrapper">
+                        <div class="nav-logo">
+                            <a href="index.html">
+                                <img src="/images/logo.png" alt="">
+                            </a>
+                        </div>
+                        <div class="nav-sections-wrapper">
+                            <button class="menu-toggle"></button>
+                            <ul class="nav-sections">
+                                <li class="menuli">Меню</li>
+                                <li>
+                                    <a href="index.html" class="nav-sections__home">
+                                        <p class="nav-sections__home-text">Главная</p>
+                                        <img src="/images/house.svg" alt="" class="nav-sections__home-img">
+                                    </a>
+                                </li>
+                                <li><a href="rules.html" class="nav-sections__rules">
+                                        <p class="nav-sections__rules-text">Правила</p>
+                                        <img src="/images/rules.svg" alt="" class="nav-sections__rules-img">
+                                    </a></li>
+                                <li><a href="politics.html" class="nav-sections__politics">
+                                        <p class="nav-sections__politics-text">Политика</p>
+                                        <img src="/images/rules.svg" alt="" class="nav-sections__politics-img">
+                                    </a></li>
+                                <li><a href="#" class="nav-sections__purchase">
+                                        <p class="nav-sections__purchase-text">Покупка из украины</p>
+                                        <img src="/images/ua.svg" alt="" class="nav-sections__purchase-img">
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <main>
+                <section class="info">
+                    <div class="info-wrapper">
+                        <div class="info-back"></div>
+                        <div class="info-text-wrap">
+                            <div class="info-text__title">
+                                <p class="info-text__title-text1">Ducky</p>
+                                <p class="info-text__title-text2">World</p>
+                            </div>
+                            <p class="info-text__text-text">Выбери свою роль на нашем проекте, воплоти все свои
+                                игровые мечты, стань лучшим прямо сейчас!</p>
+                            <div class="info-text__text-line"></div>
+                            <div class="info-text__btn">
+                                <a href="#buy" class="info-text__btn-btn">К покупкам</a>
+                            </div>
+                        </div>
+                        <div class="server-wrapper">
+                            <div class="server-online">
+                                <div class="server-online__block">
+                                    <div class="server-online__logo"><img src="/images/Logo2.png" alt=""></div>
+                                    <div class="server-online__info">
+                                        <h2 class="server-online__info-title">Наш сервер</h2>
+                                        <p class="server-online__info-online">Онлайн: <span
+                                                class="server-online__info-online-current">59</span>/100</p>
+                                        <div class="server-online__info-line">
+                                            <div class="server-online__info-line-current"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="server-ip">
+                                <div class="server-ip__block">
+                                    <h3 class="server-ip__title">mc.duckyworld.ru</h3>
+                                    <p class="server-ip__version">версия:<span class="server-ip__version-current"
+                                            id="buy">1.16.5</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-shadow"></div>
+                </section>
+        </div>
+    </div>
+    <div class="back2">
+        <section class="donat">
+            <div class="donat-wrapper">
+                <div class="container2">
+                    <div class="donat-block">
+                        <div class="donat-currency-wrapper">
+                            <div class="donat-currency__img"><img src="/images/DuckyWorld_money 5.png" alt=""></div>
+                            <div class="donat-currency__currency">
+                                <h3 class="donat-currency__currency-title">Покупка игровой валюты</h3>
+                                <div class="donat-currency__currency-text">
+                                    <p class="donat-currency__currency-text-1">Вы отдаете</p>
+                                    <p class="donat-currency__currency-text-2">Вы получаете</p>
+                                </div>
+                                <div class="donat-currency__currency__value-wrapper">
+                                    <div class="donat-currency__currency__value-block1"><input type="text"
+                                            value="500 рублей" class="numberInput" placeholder="Введите число"
+                                            oninput="addText(this, ' рублей')"></div>
+                                    <div class="donat-currency__currency__value-img">
+                                        <img src="/images/left.svg" alt="">
+                                        <img src="/images/right.svg" alt="">
+                                    </div>
+                                    <div class="donat-currency__currency__value-block1"><input type="text"
+                                            value="5000 V" class="numberInput" placeholder="Введите число"
+                                            oninput="addText(this, ' V')"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <a name="buy" class="hide"></a>
+                        <input type="range" min="0" max="1500" value="500">
+                        <div class="purchase-wrapper">
+                            <div class="purchase__btn"><a>Приобрести</a></div>
+                            <div class="purchase__text">
+                                <p>Совершая оплату, вы соглашаетесь со всеми условиями</p>
+                                <a href="#">пользовательского соглашения</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cases">
+            <div class="cases-wrapper">
+                <div class="cases-container">
+                    <div class="mode-wrapper">
+                        <h3 class="mode__title">Выбор режима</h3>
+                        <p class="mode__text">Выберите режим, на котором хотите совершить покупку</p>
+                        <div class="mode__btn">
+                            <a class="mode__btn-1" href="#">Анархия</a>
+                            <a class="mode__btn-2" href="#">Скоро...</a>
+                            <a class="mode__btn-2" href="#">Скоро...</a>
+                        </div>
+                    </div>
+                    <div class="products-wrapper">
+                        <h3 class="products__title">Категория товаров</h3>
+                        <p class="products__text">После покупки, выдача услуг происходит моментально
+                            <br>
+                            на Ваш игровой аккаунт
+                        </p>
+                        <div class="products__btn">
+                            <a class="products__btn-1" href="#">
+                                <div class="products__btn-1__block">
+                                    <img src="/images/products1.png" alt="" class="products__btn-1__img">
+                                    <p class="products__btn-1__text">Привелегии</p>
+                                </div>
+                            </a>
+                            <a class="products__btn-2" href="#">
+                                <div class="products__btn-2__block">
+                                    <img src="/images/products2.png" alt="" class="products__btn-2__img">
+                                    <p class="products__btn-2__text">Кейсы</p>
+                                </div>
+                            </a>
+                            <a class="products__btn-3" href="#">
+                                <div class="products__btn-3__block">
+                                    <img src="/images/products3.png" alt="" class="products__btn-3__img">
+                                    <p class="products__btn-3__text">Другое</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="term-wrap">
+                        <h3 class="term__title">Выберите срок</h3>
+                        <div class="term__btn">
+                            <a href="#" class="term__btn_1">30 Дней</a>
+                            <a href="#" class="term__btn_2">90 Дней</a>
+                            <a href="#" class="term__btn_3">Навсегда</a>
+                        </div>
+                    </div>
+                    <h3 class="privileges__title">Выберите привелегию</h3>
+                    <div class="privileges-wrapper">
+                        <div class="privileges-element">
+                            <div class="privileges-element__block">
+                                <p class="privileges-element__block__text1">Flinx</p>
+                                <img src="/images/Head1.png" alt="" class="privileges-element__block__img">
+                            </div>
+                            <span class="privileges-element__price">15 рублей</span>
+                            <a class="privileges-element__btn buy-button2" data-category="privilages">Купить</a>
+                        </div>
+                        <div class="privileges-element">
+                            <div class="privileges-element__block">
+                                <p class="privileges-element__block__text2">Dragon</p>
+                                <img src="/images/Head2.png" alt="" class="privileges-element__block__img">
+                            </div>
+                            <span class="privileges-element__price">55 рублей</span>
+                            <a class="privileges-element__btn buy-button2" data-category="privilages">Купить</a>
+                        </div>
+                        <div class="privileges-element">
+                            <div class="privileges-element__block">
+                                <p class="privileges-element__block__text3">harpy</p>
+                                <img src="/images/Head3.png" alt="" class="privileges-element__block__img">
+                            </div>
+                            <span class="privileges-element__price">120 рублей</span>
+                            <a class="privileges-element__btn buy-button2" data-category="privilages">Купить</a>
+                        </div>
+                        <div class="privileges-element">
+                            <div class="privileges-element__block">
+                                <p class="privileges-element__block__text4">Element</p>
+                                <img src="/images/Head4.png" alt="" class="privileges-element__block__img">
+                            </div>
+                            <span class="privileges-element__price">300 рублей</span>
+                            <a class="privileges-element__btn buy-button2" data-category="privilages">Купить</a>
+                        </div>
+                        <div class="privileges-element">
+                            <div class="privileges-element__block">
+                                <p class="privileges-element__block__text5">LUnatic</p>
+                                <img src="/images/Head5.png" alt="" class="privileges-element__block__img">
+                            </div>
+                            <span class="privileges-element__price">600 рублей</span>
+                            <a class="privileges-element__btn buy-button2" data-category="privilages">Купить</a>
+                        </div>
+                        <div class="privileges-element">
+                            <div class="privileges-element__block">
+                                <p class="privileges-element__block__text6">Betsy</p>
+                                <img src="/images/Head6.png" alt="" class="privileges-element__block__img">
+                            </div>
+                            <span class="privileges-element__price">800 рублей</span>
+                            <a class="privileges-element__btn buy-button2" data-category="privilages">Купить</a>
+                        </div>
+                        <div class="privileges-element">
+                            <div class="privileges-element__block">
+                                <p class="privileges-element__block__text7">cthulhu</p>
+                                <img src="/images/Head7.png" alt="" class="privileges-element__block__img">
+                            </div>
+                            <span class="privileges-element__price">1150 рублей</span>
+                            <a class="privileges-element__btn buy-button2" data-category="privilages">Купить</a>
+                        </div>
+                        <div class="privileges-element">
+                            <div class="privileges-element__block">
+                                <p class="privileges-element__block__text8">DUCK</p>
+                                <img src="/images/Head8.png" alt="" class="privileges-element__block__img">
+                            </div>
+                            <span class="privileges-element__price">1800 рублей</span>
+                            <a class="privileges-element__btn buy-button2" data-category="privilages">Купить</a>
+                        </div>
+                    </div>
+                    <h3 class="box__title">Выберите кейс</h3>
+                    <div class="box-wrapper">
+                        <div class="box-element">
+                            <div class="box-element__block">
+                                <p class="box-element__block__text1">Кейс 1</p>
+                                <img src="/images/Chest1.png" alt="" class="box-element__block__img">
+                            </div>
+                            <span class="box-element__price">10 рублей</span>
+                            <a class="box-element__btn buy-button">Купить</a>
+                        </div>
+                        <div class="box-element">
+                            <div class="box-element__block">
+                                <p class="box-element__block__text1">Кейс 1</p>
+                                <img src="/images/Chest1.png" alt="" class="box-element__block__img">
+                            </div>
+                            <span class="box-element__price">10 рублей</span>
+                            <a class="box-element__btn buy-button">Купить</a>
+                        </div>
+                        <div class="box-element">
+                            <div class="box-element__block">
+                                <p class="box-element__block__text2">Кейс 1</p>
+                                <img src="/images/Chest2.png" alt="" class="box-element__block__img">
+                            </div>
+                            <span class="box-element__price">10 рублей</span>
+                            <a class="box-element__btn buy-button">Купить</a>
+                        </div>
+                        <div class="box-element">
+                            <div class="box-element__block">
+                                <p class="box-element__block__text2">Кейс 1</p>
+                                <img src="/images/Chest2.png" alt="" class="box-element__block__img">
+                            </div>
+                            <span class="box-element__price">10 рублей</span>
+                            <a class="box-element__btn buy-button">Купить</a>
+                        </div>
+                        <div class="box-element">
+                            <div class="box-element__block">
+                                <p class="box-element__block__text3">Кейс 1</p>
+                                <img src="/images/Chest3.png" alt="" class="box-element__block__img">
+                            </div>
+                            <span class="box-element__price">10 рублей</span>
+                            <a class="box-element__btn buy-button">Купить</a>
+                        </div>
+                        <div class="box-element">
+                            <div class="box-element__block">
+                                <p class="box-element__block__text3">Кейс 1</p>
+                                <img src="/images/Chest3.png" alt="" class="box-element__block__img">
+                            </div>
+                            <span class="box-element__price">10 рублей</span>
+                            <a class="box-element__btn buy-button">Купить</a>
+                        </div>
+                        <div class="box-element">
+                            <div class="box-element__block">
+                                <p class="box-element__block__text4">Кейс 1</p>
+                                <img src="/images/Chest4.png" alt="" class="box-element__block__img">
+                            </div>
+                            <span class="box-element__price">10 рублей</span>
+                            <a class="box-element__btn buy-button">Купить</a>
+                        </div>
+                        <div class="box-element">
+                            <div class="box-element__block">
+                                <p class="box-element__block__text4">Кейс 1</p>
+                                <img src="/images/Chest4.png" alt="" class="box-element__block__img">
+                            </div>
+                            <span class="box-element__price">10 рублей</span>
+                            <a class="box-element__btn buy-button">Купить</a>
+                        </div>
+                    </div>
+                    <h3 class="service__title">Выберите услугу</h3>
+                    <div class="service-wrapper">
+                        <div class="service-element">
+                            <div class="service-element__block">
+                                <p class="service-element__block__text1">Разбан</p>
+                                <img src="/images/service1.png" alt="" class="service-element__block__img">
+                            </div>
+                            <span class="service-element__price">10 рублей</span>
+                            <a class="service-element__btn">Купить</a>
+                        </div>
+                        <div class="service-element">
+                            <div class="service-element__block">
+                                <p class="service-element__block__text2">Перенос
+                                    <br>
+                                    аккаунта
+                                </p>
+                                <img src="/images/service2.png" alt="" class="service-element__block__img">
+                            </div>
+                            <span class="service-element__price">10 рублей</span>
+                            <a class="service-element__btn">Купить</a>
+                        </div>
+                        <div class="service-element">
+                            <div class="service-element__block">
+                                <p class="service-element__block__text3">Востановление
+                                    <br>
+                                    аккаунта
+                                </p>
+                                <img src="/images/service3.png" alt="" class="service-element__block__img">
+                            </div>
+                            <span class="service-element__price">10 рублей</span>
+                            <a class="service-element__btn">Купить</a>
+                        </div>
+                        <div class="service-element">
+                            <div class="service-element__block">
+                                <p class="service-element__block__text4">Боевой
+                                    <br>
+                                    пропуск
+                                </p>
+                                <img src="/images/service4.png" alt="" class="service-element__block__img">
+                            </div>
+                            <span class="service-element__price">10 рублей</span>
+                            <a class="service-element__btn">Купить</a>
+                        </div>
+                    </div>
+                </div>
+                <section class="last">
+                    <div class="last-container">
+                        <h3 class="last__title">Последние покупки</h3>
+                        <div class="last-wrapper">
+                            <div class="last-element">
+                                <div class="last-element__block">
+                                    <p class="last-element__block__text1">Кейс 2</p>
+                                    <img src="/images/last.png" alt="" class="last-element__block__img">
+                                </div>
+                                <span class="last-element__price">Nickname</span>
+                            </div>
+                            <div class="last-element">
+                                <div class="last-element__block">
+                                    <p class="last-element__block__text1">Кейс 2</p>
+                                    <img src="/images/last.png" alt="" class="last-element__block__img">
+                                </div>
+                                <span class="last-element__price">Nickname</span>
+                            </div>
+                            <div class="last-element">
+                                <div class="last-element__block">
+                                    <p class="last-element__block__text1">Кейс 2</p>
+                                    <img src="/images/last.png" alt="" class="last-element__block__img">
+                                </div>
+                                <span class="last-element__price">Nickname</span>
+                            </div>
+                            <div class="last-element">
+                                <div class="last-element__block">
+                                    <p class="last-element__block__text1">Кейс 2</p>
+                                    <img src="/images/last.png" alt="" class="last-element__block__img">
+                                </div>
+                                <span class="last-element__price">Nickname</span>
+                            </div>
+                            <div class="last-element">
+                                <div class="last-element__block">
+                                    <p class="last-element__block__text1">Кейс 2</p>
+                                    <img src="/images/last.png" alt="" class="last-element__block__img">
+                                </div>
+                                <span class="last-element__price">Nickname</span>
+                            </div>
+                            <div class="last-element">
+                                <div class="last-element__block">
+                                    <p class="last-element__block__text1">Кейс 2</p>
+                                    <img src="/images/last.png" alt="" class="last-element__block__img">
+                                </div>
+                                <span class="last-element__price">Nickname</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </div>
+    </main>
+    <footer>
+        <div class="footer-back">
+            <div class="footer-container">
+                <div class="footer-wrapper">
+                    <div class="footer__logo">
+                        <img src="/images/footerlogo.png" alt="">
+                        <div class="footer__logo_text-wrap">
+                            <p>Ducky</p>
+                            <p>World</p>
+                        </div>
+                    </div>
+                    <div class="footer__text">
+                        <p class="footer__text__1 foottext">© 2024 DuckyWorld Все права защищены</p>
+                        <p class="footer__text__2 foottext">DuckyWorld не связан с MojangAB,
+                            <br>
+                            все средства идут на развитие проекта.
+                        </p>
+                        <p class="footer__text__3">ИП Иванов Иван Иванович <br>
+                            ИНН: 000000000000О
+                            <br>ГРНИП: 000000000000000
+                            <br>admin@duckyworld.ru (ПН-ПТ 10:00-18:00 МСК)
+                        </p>
+                    </div>
+                    <div class="footer__btns">
+                        <a href="#" class="footer__btns__btn">Главная</a>
+                        <a href="politics.html" class="footer__btns__btn">Политика</a>
+                        <a href="rules.html" class="footer__btns__btn">Правила</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="modal">
+        <div class="modal-content">
+            <div class="buy-wrapper">
+                <div class="name-product">Гриферский - 1</div>
+                <div class="modal-text-wrapper">
+                    <p class="text-product">Покупка товара:</p>
+                    <p class="case-product">Кейс - 2</p>
+                </div>
+                <div><span class="close">&times;</span></div>
+            </div>
+            <div class="form-wrapper">
+                <input type="text" placeholder="Никнейм" class="modal-nick modal-input">
+                <input type="text" placeholder="Промокод" class="modal-promo modal-input">
+                <div class="input-wrapper">
+                    <div class="label-text">Укажите количество товара, которое хотите приобрести</div>
+                    <div class="number-input">
+                        <input type="button" value="+" class="inp1"
+                            onclick="stepUp(this.parentElement.querySelector('input[type=number]'))">
+                        <input type="number" value="0" min="0" max="1000" class="modal-quantity">
+                        <input type="button" value="-" class="inp2"
+                            onclick="stepDown(this.parentElement.querySelector('input[type=number]'))">
+                    </div>
+                </div>
+            </div>
+            <button class="form-buy">Приобрести за <span class="modal-price">500</span> руб</button>
+            <div class="check-wrapper">
+                <label class="checkbox-label">
+                    <input type="checkbox" class="hidden-checkbox" />
+                    <span class="checkbox-custom"></span>
+                </label>
+                <p>Осуществляя оплату товара/услуги, Вы соглашаетесь с его описанием, полностью
+                    осознаете их содержание, и не имеете против него претензий.</p>
+            </div>
+        </div>
+    </div>
+    <div class="modal2">
+        <div class="modal-content2">
+            <div class="buy-wrapper">
+                <div class="name-product2">Анархия</div>
+                <div class="modal-text-wrapper">
+                    <p class="text-product">Покупка товара:</p>
+                    <p class="case-product">Duck</p>
+                </div>
+                <div><span class="close2">&times;</span></div>
+            </div>
+            <div class="form-wrapper">
+                <div class="dop-wrapper">
+                    <img src="/images/dop.png" alt="" class="dop-img">
+                </div>
+                <input type="text" placeholder="Никнейм" class="modal-nick modal-input">
+                <input type="text" placeholder="Промокод" class="modal-promo modal-input">
+                <div class="input-wrapper">
+                    <div class="label-text">Укажите количество товара, которое хотите приобрести</div>
+                    <div class="number-input">
+                        <input type="button" value="+" class="inp1"
+                            onclick="stepUp(this.parentElement.querySelector('input[type=number]'))">
+                        <input type="number" value="0" min="0" max="1000" class="modal-quantity">
+                        <input type="button" value="-" class="inp2"
+                            onclick="stepDown(this.parentElement.querySelector('input[type=number]'))">
+                    </div>
+                </div>
+            </div>
+            <button class="form-buy">Приобрести за <span class="modal-price">1800</span> руб</button>
+            <div class="check-wrapper">
+                <label class="checkbox-label">
+                    <input type="checkbox" class="hidden-checkbox" />
+                    <span class="checkbox-custom"></span>
+                </label>
+                <p>Осуществляя оплату товара/услуги, Вы соглашаетесь с его описанием, полностью
+                    осознаете их содержание, и не имеете против него претензий.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
